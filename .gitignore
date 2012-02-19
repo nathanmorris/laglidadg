@@ -1,0 +1,8 @@
+errors/
+cache/
+databases/
+private/
+uploads/
+sessions/
+*.pyc
+*.rtf
