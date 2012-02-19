@@ -1,0 +1,119 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+Gene	Sequence.h	/^		Gene( char hdr[] ) { header_.assign( hdr ); finalized_ = false; }$/;"	f	class:Gene
+Gene	Sequence.h	/^		Gene()$/;"	f	class:Gene
+Gene	Sequence.h	/^class Gene {$/;"	c
+GeneList	Sequence.h	/^		GeneList( std::string const filename, OutputLevel level = NORMAL )$/;"	f	class:GeneList
+GeneList	Sequence.h	/^		GeneList()$/;"	f	class:GeneList
+GeneList	Sequence.h	/^class GeneList {$/;"	c
+Hit	Hits.h	/^		Hit($/;"	f	class:Hit
+Hit	Hits.h	/^		Hit()$/;"	f	class:Hit
+Hit	Hits.h	/^class Hit {$/;"	c
+HitManager	Hits.h	/^		HitManager() : full_(false), maxhits_(0), outputlevel_(NORMAL) {}$/;"	f	class:HitManager
+HitManager	Hits.h	/^class HitManager {$/;"	c
+INCLUDED_Hits	Hits.h	6;"	d
+INCLUDED_PSSM	PSSM.h	6;"	d
+INCLUDED_Sequence	Sequence.h	6;"	d
+INCLUDED_TargetSearch	TargetSearch.h	6;"	d
+INCLUDED_util	util.h	6;"	d
+MINIMAL	util.h	/^	MINIMAL,$/;"	e	enum:OutputLevel
+NORMAL	util.h	/^	NORMAL,$/;"	e	enum:OutputLevel
+OutputLevel	util.h	/^enum OutputLevel {$/;"	g
+PSSM	PSSM.h	/^		PSSM() : length_(0), outputlevel_(NORMAL) {}$/;"	f	class:PSSM
+PSSM	PSSM.h	/^class PSSM {$/;"	c
+PssmPos	PSSM.h	/^		PssmPos( int _index ) : siteindex_( _index ) {}$/;"	f	class:PssmPos
+PssmPos	PSSM.h	/^		PssmPos() : siteindex_(0) {}$/;"	f	class:PssmPos
+PssmPos	PSSM.h	/^class PssmPos {$/;"	c
+TargetSearch	TargetSearch.cpp	/^TargetSearch::TargetSearch($/;"	f	class:TargetSearch
+TargetSearch	TargetSearch.h	/^class TargetSearch {$/;"	c
+VERBOSE	util.h	/^	VERBOSE$/;"	e	enum:OutputLevel
+add_weight	PSSM.cpp	/^PssmPos::add_weight( float weight )$/;"	f	class:PssmPos
+begin	Sequence.h	/^		std::vector< Gene >::const_iterator begin() const { return genes_.begin(); }$/;"	f	class:GeneList
+begin	Sequence.h	/^		std::vector< char >::const_iterator begin() const { return sequence_.begin(); }$/;"	f	class:Gene
+best_cases_	PSSM.h	/^		std::vector< float > best_cases_;$/;"	m	class:PSSM
+bestcase	PSSM.h	/^		float bestcase( unsigned siteindex ) const { return best_cases_[siteindex]; }$/;"	f	class:PSSM
+bestweight	PSSM.cpp	/^PssmPos::bestweight() const$/;"	f	class:PssmPos
+comp	util.cpp	/^char comp( char nucleotide )$/;"	f
+consider	Hits.cpp	/^HitManager::consider($/;"	f	class:HitManager
+end	Sequence.h	/^		std::vector< Gene >::const_iterator end() const { return genes_.end(); }$/;"	f	class:GeneList
+end	Sequence.h	/^		std::vector< char >::const_iterator end() const { return sequence_.end(); }$/;"	f	class:Gene
+finalize	Sequence.cpp	/^Gene::finalize()$/;"	f	class:Gene
+finalize	Sequence.cpp	/^void GeneList::finalize()$/;"	f	class:GeneList
+finalized_	Sequence.h	/^		bool finalized_;$/;"	m	class:Gene
+full	Hits.h	/^		bool full() const { return full_; }$/;"	f	class:HitManager
+full	Hits.h	/^		void full( bool value ) { full_ = value; }$/;"	f	class:HitManager
+full_	Hits.h	/^		bool full_;$/;"	m	class:HitManager
+genes_	Sequence.h	/^		std::vector< Gene > genes_;$/;"	m	class:GeneList
+header	Sequence.h	/^		std::string const & header() const { return header_; }$/;"	f	class:Gene::std
+header_	Sequence.h	/^		std::string header_;$/;"	m	class:Gene
+hits_	Hits.h	/^		std::list< Hit > hits_;$/;"	m	class:HitManager
+hits_	TargetSearch.h	/^		HitManager hits_;$/;"	m	class:TargetSearch
+isnuc	util.cpp	/^bool isnuc( char letter )$/;"	f
+key_	PSSM.h	/^		std::vector< char > key_; \/\/ letter to number conversion for weight indices$/;"	m	class:PSSM
+length	PSSM.h	/^		unsigned const length() const { return length_; }$/;"	f	class:PSSM
+length_	PSSM.h	/^		unsigned length_;$/;"	m	class:PSSM
+lower	util.cpp	/^char lower( char nucleotide )$/;"	f
+main	main.cpp	/^int main( int argc, char *argv[] ) {$/;"	f
+maxhits	Hits.h	/^		unsigned maxhits() const { return maxhits_; }$/;"	f	class:HitManager
+maxhits	Hits.h	/^		void maxhits( unsigned value ) { maxhits_ = value; }$/;"	f	class:HitManager
+maxhits_	Hits.h	/^		unsigned maxhits_;$/;"	m	class:HitManager
+numbps	Sequence.h	/^		unsigned numbps() const { return numbps_; }$/;"	f	class:GeneList
+numbps_	Sequence.h	/^		unsigned numseqs_, numbps_;$/;"	m	class:GeneList
+numbps_	TargetSearch.h	/^		unsigned numseqs_, numbps_;$/;"	m	class:TargetSearch
+numseqs	Sequence.h	/^		unsigned numseqs() const { return numseqs_; }$/;"	f	class:GeneList
+numseqs_	Sequence.h	/^		unsigned numseqs_, numbps_;$/;"	m	class:GeneList
+numseqs_	TargetSearch.h	/^		unsigned numseqs_, numbps_;$/;"	m	class:TargetSearch
+operator <<	Hits.cpp	/^std::ostream & operator << ( std::ostream & out, Hit const & hit )$/;"	f
+operator <<	PSSM.cpp	/^std::ostream & operator << ( std::ostream & out, PSSM const & pssm )$/;"	f
+operator <<	PSSM.cpp	/^std::ostream & operator << ( std::ostream & out, PssmPos const & pssm_pos )$/;"	f
+operator <<	Sequence.cpp	/^std::ostream & operator << ( std::ostream & out, GeneList const & genelist )$/;"	f
+operator <<	Sequence.cpp	/^std::ostream & operator<< ( std::ostream & out, Gene const & gene )$/;"	f
+operator <<	util.cpp	/^std::ostream & operator << ($/;"	f
+outputlevel	Hits.h	/^		void outputlevel( OutputLevel level ) { outputlevel_ = level; }$/;"	f	class:HitManager
+outputlevel_	Hits.h	/^		OutputLevel outputlevel_;$/;"	m	class:HitManager
+outputlevel_	PSSM.h	/^		OutputLevel outputlevel_;$/;"	m	class:PSSM
+outputlevel_	Sequence.h	/^		OutputLevel outputlevel_;$/;"	m	class:GeneList
+outputlevel_	TargetSearch.h	/^		OutputLevel outputlevel_;$/;"	m	class:TargetSearch
+parse_key	PSSM.cpp	/^PSSM::parse_key( std::string const & line )$/;"	f	class:PSSM
+positions_	PSSM.h	/^		std::vector< PssmPos > positions_;$/;"	m	class:PSSM
+print	Hits.cpp	/^Hit::print( std::ostream & out ) const$/;"	f	class:Hit
+print	Hits.cpp	/^HitManager::print( std::ostream & out ) const$/;"	f	class:HitManager
+print	PSSM.cpp	/^PSSM::print($/;"	f	class:PSSM
+print	Sequence.cpp	/^Gene::print( std::ostream & out ) const$/;"	f	class:Gene
+print	Sequence.cpp	/^GeneList::print( std::ostream & out ) const$/;"	f	class:GeneList
+print_results	TargetSearch.cpp	/^TargetSearch::print_results( std::ostream & out ) const$/;"	f	class:TargetSearch
+print_weights	PSSM.cpp	/^PssmPos::print_weights( std::ostream & out ) const$/;"	f	class:PssmPos
+priority	PSSM.h	/^		int priority( unsigned siteindex ) const { return priority_[siteindex]; }$/;"	f	class:PSSM
+priority_	PSSM.h	/^		std::vector< int > priority_;$/;"	m	class:PSSM
+pssm_	TargetSearch.h	/^		PSSM pssm_;$/;"	m	class:TargetSearch
+readfile	PSSM.cpp	/^PSSM::readfile($/;"	f	class:PSSM
+readfile	Sequence.cpp	/^void GeneList::readfile( std::string const filename )$/;"	f	class:GeneList
+readline	Sequence.cpp	/^void Gene::readline( char linebuff[], int const chars )$/;"	f	class:Gene
+rvs	Hits.h	/^		bool rvs() const { return rvs_; }$/;"	f	class:Hit
+rvs_	Hits.h	/^		bool rvs_;$/;"	m	class:Hit
+scale	PSSM.cpp	/^PssmPos::scale( float factor )$/;"	f	class:PssmPos
+scan_seq	TargetSearch.cpp	/^TargetSearch::scan_seq( std::string const & filename )$/;"	f	class:TargetSearch
+scan_seq	TargetSearch.cpp	/^void TargetSearch::scan_seq( Gene const & gene )$/;"	f	class:TargetSearch
+score	Hits.h	/^		float score() const { return score_; }$/;"	f	class:Hit
+score	PSSM.cpp	/^PSSM::score($/;"	f	class:PSSM
+score_	Hits.h	/^		float score_;$/;"	m	class:Hit
+secondfloatdesc	util.cpp	/^bool secondfloatdesc($/;"	f
+seqindex	Hits.h	/^		unsigned seqindex() const { return seqindex_; }$/;"	f	class:Hit
+seqindex_	Hits.h	/^		unsigned seqindex_;$/;"	m	class:Hit
+sequence	Sequence.h	/^		std::vector< char > const & sequence() const { return sequence_; }$/;"	f	class:Gene::std
+sequence_	Hits.h	/^		std::vector< char > sequence_;$/;"	m	class:Hit
+sequence_	Sequence.h	/^		std::vector< char > sequence_; \/\/ the meat$/;"	m	class:Gene
+set_priority_and_best_cases	PSSM.cpp	/^PSSM::set_priority_and_best_cases()$/;"	f	class:PSSM
+setup	PSSM.cpp	/^PSSM::setup($/;"	f	class:PSSM
+siteindex_	PSSM.h	/^		int siteindex_;$/;"	m	class:PssmPos
+source_	Hits.h	/^		std::string source_;$/;"	m	class:Hit
+upper	util.cpp	/^char upper( char nucleotide )$/;"	f
+usage_error	main.cpp	/^void usage_error()$/;"	f
+weights	PSSM.h	/^		std::vector< float > const & weights() const { return weights_; }$/;"	f	class:PssmPos::std
+weights_	PSSM.h	/^		std::vector< float > weights_;$/;"	m	class:PssmPos
+worst	Hits.h	/^		float worst() const { return hits_.front().score(); }$/;"	f	class:HitManager
+worstweight	PSSM.cpp	/^PssmPos::worstweight() const$/;"	f	class:PssmPos
