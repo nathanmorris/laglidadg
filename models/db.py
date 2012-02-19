@@ -12,7 +12,7 @@
 if not request.env.web2py_runtime_gae:
     ## if NOT running on Google App Engine use SQLite or other DB
     #db = DAL('sqlite://storage.sqlite')
-    db = SQLDB('postgres://morrisdecode1:cohen444@localhost:5432/morrisdecodedb2')
+    db = SQLDB('postgres://morrisdecode1:cohen444@localhost:5432/laglidadg1')
 
 else:
     ## connect to Google BigTable (optional 'google:datastore://namespace')
@@ -81,3 +81,11 @@ use_janrain(auth,filename='private/janrain.key')
 ## >>> for row in rows: print row.id, row.myfield
 #########################################################################
 
+db.define_table('laglidadg',
+    Field('title','string'),
+    Field('all_info','text'),
+    Field('upSeq_target_dna','text'),
+    Field('upSeq_dna','text'),
+    Field('seq_dna','text'),
+    Field('downSeq_target_dna','text'),
+    Field('downSeq_dna','text'))
